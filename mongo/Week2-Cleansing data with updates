@@ -1,0 +1,17 @@
+Question 1 : 
+
+# Replace YYYY with a query on the people-raw collection that will return a cursor with only
+# documents where the birthday field is a string
+people_with_string_birthdays = people_raw.find(
+        {
+          'birthday' :{
+           '$type' : 'string'
+        }  
+        }
+    
+);
+
+Answer = 10382
+
+Question 2 : 
+Answer : $set
