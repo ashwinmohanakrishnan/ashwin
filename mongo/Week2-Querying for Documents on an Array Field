@@ -1,0 +1,24 @@
+Question 1: 
+
+
+# Replace XXXX with a filter document that will find the movies where "Harrison Ford" is a member of the cast
+movie_filter_doc = {'cast' : {'$all' :["Harrison Ford"]}}
+
+Answer : 167
+
+
+Question 2:
+# Replace YYYY with a filter document to find the survey results where the "abc" product scored greater than 6
+survey_filter_doc = {'results':{
+'$elemMatch':{
+'product': 'abc',
+'score':{
+'$gt':6
+}
+}
+}
+}
+
+Answer : 295
+                    
+                    
