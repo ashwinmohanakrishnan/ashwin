@@ -1,0 +1,19 @@
+# Replace XXXX with your query to find all trips that started .5 miles from 40.75741088433861, -73.98782093364191
+query = {
+'start station location':
+{
+'$nearSphere':{
+'$geometry':
+ {
+     'type':'Point',
+     'coordinates':[-73.98782093364191,40.75741088433861]
+ },
+    '$minDistance':0,
+    '$maxDistance':804.672
+}
+}
+}
+
+
+Hint : half a mile means 804.672 meters
+Answer: 163122
