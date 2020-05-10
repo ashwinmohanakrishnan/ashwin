@@ -1,0 +1,13 @@
+# Replace "YYYY" with the best index to increase the performance of the two queries above
+people.create_index("last_name")
+
+Answer : last_name
+
+Explaination:
+The second part of the lab requires a bit more thinking.
+
+Recall from the lesson that indexes increase the speed of queries that use the fields specified in the index.
+
+After examining both queries you should have noticed that both filter on last_name. This is a prime candidate to create and index on to increase the performance of these two queries.
+
+people.create_index('last_name')
