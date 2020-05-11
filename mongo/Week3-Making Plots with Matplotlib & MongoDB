@@ -1,0 +1,46 @@
+Question 1 : 
+
+Answer : Choice 4
+
+
+Question 2: 
+# here you'll write the code to plot pressures and air_temps in a cartesian plot
+plt.clf()
+
+fig , ax = plt.subplots()
+
+ax.scatter(pressures,air_temps)
+
+plt.show()
+
+Answer : Choice 2
+
+Question 3:
+
+# here you'll write the code to plot pressures, air_temps, and wind_speeds in a 3D plot
+
+plt.clf()
+
+fig = plt.figure()
+
+ax = fig.add_subplot(111 , projection = '3d')
+
+ax.scatter(pressures,air_temps,wind_speeds)
+
+
+Answer : Choice 4
+
+
+Question 4 : 
+# here you'll write the code to trip durations for each day as box plots
+
+plt.clf()
+
+fig , ax = plt.subplots()
+
+ax.boxplot(trip_durations_by_day)
+
+plt.show()
+
+
+Answer : Choice 3
